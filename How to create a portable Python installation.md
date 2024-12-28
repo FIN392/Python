@@ -71,6 +71,9 @@ __CAUTION__: The version '_embeddable package_' sound like a good option but it 
 
 Execute the downloaded file but be careful to follow these steps carefully, this is the key to everything.
 
+>[!NOTE]
+>This document is made using version 3.13.1 so the following screens may vary.
+
 ![alt text](image.png)
 
 Uncheck option '_Add python.exe to PATH_'.
@@ -86,6 +89,15 @@ Keep unchecked '_py launcher_' and '_for all users_'.
 Click on '_Next_'.
 
 ![alt text](image-2.png)
+
+Uncheck __ALL__ the options.
+
+Change the installation location by choosing the folder you created. '_E:\myPythonApplication\Python_' in my case.
+
+Click on '_Install_'.
+
+
+
 
 
 
