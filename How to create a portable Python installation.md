@@ -73,10 +73,19 @@ Execute the downloaded file but be careful to follow these steps carefully, this
 
 ![alt text](image.png)
 
-Uncheck option '_Add python.exe to PATH_'
+Uncheck option '_Add python.exe to PATH_'.
 
-Click on '_Customize installation_'
+Click on '_Customize installation_'.
 
+![alt text](image-1.png)
+
+Check '_Documentation_', '_pip_', '_tcl/tk and IDLE_', '_Python test suite_'.
+
+Keep unchecked '_py launcher_' and '_for all users_'.
+
+Click on '_Next_'.
+
+![alt text](image-2.png)
 
 
 
