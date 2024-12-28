@@ -53,10 +53,36 @@ This is the folder structure I suggest:
 ## <a name="python"></a>2. Install Python.
 
 >[!WARNING]
->Use ONLY files downloaded from https://www.python.org/. This way you will avoid possible trojans, viruses, malwares, spam and other modern evils.
+>ONLY download Python from https://www.python.org/. This way you will avoid possible trojans, viruses, malwares, spam and other modern evils.
+
+In the _Downloads / Windows_ section of [Python.org](https://www.python.org/) you will find a link to '_Latest Python Release_'. Use this if you have no preference or requirement for your developments.
+
+At the bottom of the page you will find the different versions:
+- Windows installer (64-bit)
+- Windows installer (32-bit)
+- Windows installer (ARM64)
+- Windows embeddable package (64-bit)
+- Windows embeddable package (32-bit)
+- Windows embeddable package (ARM64)
+
+Download the version: '__Windows installer (64-bit)__'
+
+__CAUTION__: The version '_embeddable package_' sound like a good option but it is not.
+
+Execute the downloaded file but be careful to follow these steps carefully, this is the key to everything.
+
+![alt text](image.png)
+
+Uncheck option '_Add python.exe to PATH_'
+
+Click on '_Customize installation_'
 
 
-En la sección _Downloads / Windows_ 
+
+
+
+
+
 
 ## <a name="pip"></a>3. Installa additional packages.
 
