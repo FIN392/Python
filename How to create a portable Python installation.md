@@ -13,32 +13,13 @@ If you are going to add additional third-party packages or modules, please check
 
 - A computer with Windows
 - Internet access (to download Python and other packages).
-- Your fancy Python script. If you don't have any, use this one:
-
-```Python
-import tkinter as tk
-import ttkbootstrap as ttk
-from ttkbootstrap.constants import *
-
-def main():
-    
-    root = ttk.Window( title="Hello, World! with TkBootstrap", themename="darkly" )
-    root.geometry( "300x150" )
-
-    output_label = ttk.Label( root, text="Hello, World!", font=( "Helvetica", 16 ) )
-    output_label.pack( pady=20 )
-
-    root.mainloop()
-
-if __name__ == '__main__':
-    main()
-```
+- Your fancy Python script.
 
 ## Steps
 
 1. [Create folder structure](#folders).
 2. [Install Python](#python).
-3. [Installa additional packages](#pip).
+3. [Install additional packages](#pip).
 4. [Create a Python script](#script).
 5. [Test and go live](#test).
 
@@ -96,25 +77,88 @@ Change the installation location by choosing the folder you created. '_E:\myPyth
 
 Click on '_Install_'.
 
+![alt text](image-3.png)
 
+Click on '_Close_'.
 
+To '_Disable path length limit_' is a good idea but not in this case. If you do this it will only affect the computer where you are creating the environment and not the computers where you will deploy your developments.
 
+__Done!__.
 
+You can test the Python installation from the Command Prompt (aka '_Terminal_'):
 
+```Batch
+C:\>E:\myPythonApplication\Python\python.exe --version
+Python 3.13.1
 
+C:\>
+```
+## <a name="pip"></a>3. Install additional packages.
 
+Now you can install the additional packages required for your project using the command 'python.exe -m pip install'.
 
+For my example is required 'ttkbootstrap' so just type:
 
-## <a name="pip"></a>3. Installa additional packages.
+```Batch
+C:\>E:\myPythonApplication\Python\python.exe -m pip install ttkbootstrap
+```
 
-x
+__Note__: Do not use 'pip.exe' directly. Use 'python.exe -m pip install' to ensure proper installation of the package inside your Python folder.
+
 
 ## <a name="script"></a>4. Create a Python script.
 
-x
+I recommend creating your scripts in the '_Scripts_' folder.
+
+Here is an example:
+
+```Python
+import tkinter as tk
+import ttkbootstrap as ttk
+from ttkbootstrap.constants import *
+
+def main():
+    
+    root = ttk.Window( title="Hello, World! with TkBootstrap", themename="darkly" )
+    root.geometry( "300x150" )
+
+    output_label = ttk.Label( root, text="Hello, World!", font=( "Helvetica", 16 ) )
+    output_label.pack( pady=20 )
+
+    root.mainloop()
+
+if __name__ == '__main__':
+    main()
+```
 
 ## <a name="test"></a>5. Test and go live.
 
-x
+To prove that everything works...
 
+```Batch
+C:\>E:\myPythonApplication\Python\python.exe E:\myPythonApplication\Scripts\myPythonApplication.py
+```
+![alt text](image-4.png)
 
+__TADA!__
+
+Perfect but now let's make sure it's fully portable.
+
+ZIP the entire contents of the 'myPythonApplication' folder, download the ZIP to another computer that has never had any Python installed, unzip and test: '```.\Python\python.exe .\Scripts\myPythonApplication.py```'.
+
+If you don't have that 'clean' computer a good idea is to use [Windows Sandbox](https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview).
+
+You can access to your project folder directly. just save this in a file with extension '.wsb'
+
+```
+<Configuration>
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>E:\myPythonApplication</HostFolder>
+      <ReadOnly>false</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+</Configuration>
+```
+---
+'_That's all folks!_' Please, send me your comments, critics, doubts, requests or sues.
