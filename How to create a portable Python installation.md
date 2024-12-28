@@ -11,7 +11,7 @@ If you are going to add additional third-party packages or modules, please check
 
 ## Requirements
 
-- Windows computer
+- A computer with Windows
 - Internet access (to download Python and other packages).
 - Your fancy Python script. If you don't have any, use this one:
 
@@ -44,11 +44,19 @@ if __name__ == '__main__':
 
 ## <a name="folders"></a>1. Create folder structure.
 
-x
+This is the folder structure I suggest:
+
+> 📁 myPythomApplication  
+> ├── 📁 Python  
+> └── 📁 Scripts
 
 ## <a name="python"></a>2. Install Python.
 
-x
+>[!WARNING]
+>Use ONLY files downloaded from https://www.python.org/. This way you will avoid possible trojans, viruses, malwares, spam and other modern evils.
+
+
+En la sección _Downloads / Windows_ 
 
 ## <a name="pip"></a>3. Installa additional packages.
 
