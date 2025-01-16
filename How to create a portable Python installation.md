@@ -87,7 +87,7 @@ __Done!__.
 
 You can test the Python installation from the Command Prompt (aka '_Terminal_'):
 
-```Batch
+```batchfile
 C:\>E:\myPythonApplication\Python\python.exe --version
 Python 3.13.1
 
@@ -99,7 +99,7 @@ Now you can install the additional packages required for your project using the 
 
 For my example is required 'ttkbootstrap' so just type:
 
-```Batch
+```batchfile
 C:\>E:\myPythonApplication\Python\python.exe -m pip install ttkbootstrap
 ```
 
@@ -135,7 +135,7 @@ if __name__ == '__main__':
 
 To prove that everything works...
 
-```Batch
+```batchfile
 C:\>E:\myPythonApplication\Python\python.exe E:\myPythonApplication\Scripts\myPythonApplication.py
 ```
 ![alt text](image-4.png)
